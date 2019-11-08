@@ -1,0 +1,55 @@
+compilers:
+- compiler:
+    spec: gcc@7.4.0
+    paths:
+      cc: /usr/bin/gcc-7
+      cxx: /usr/bin/g++-7
+      f77: /usr/bin/gfortran-7
+      fc: /usr/bin/gfortran-7
+    flags: {}
+    operating_system: ubuntu18.04
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: clang@6.0.0
+    paths:
+      cc: /usr/bin/clang-6.0
+      cxx: /usr/bin/clang++-6.0
+      f77: /usr/bin/gfortran-6
+      fc: /usr/bin/gfortran-6
+    flags: {}
+    operating_system: ubuntu18.04
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@6.5.0
+    paths:
+      cc: /usr/bin/gcc-6
+      cxx: /usr/bin/g++-6
+      f77: /usr/bin/gfortran-6
+      fc: /usr/bin/gfortran-6
+    flags: {}
+    operating_system: ubuntu18.04
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@8.3.0
+    paths:
+      cc: /opt/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.4.0/gcc-8.3.0-y6ogq7sdjy2lxhdwoluv44fgzfo5ua4g/bin/gcc
+      cxx: /opt/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.4.0/gcc-8.3.0-y6ogq7sdjy2lxhdwoluv44fgzfo5ua4g/bin/g++
+      f77: /opt/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.4.0/gcc-8.3.0-y6ogq7sdjy2lxhdwoluv44fgzfo5ua4g/bin/gfortran
+      fc: /opt/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.4.0/gcc-8.3.0-y6ogq7sdjy2lxhdwoluv44fgzfo5ua4g/bin/gfortran
+    flags: {}
+    operating_system: ubuntu18.04
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths:
+      - /opt/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.4.0/gcc-8.3.0-y6ogq7sdjy2lxhdwoluv44fgzfo5ua4g/lib64
+
