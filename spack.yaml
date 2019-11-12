@@ -1,9 +1,9 @@
 spack:
   specs:
-  - readline@8.0@gcc@8.3.0 arch=linux-ubuntu18.04-x86_64
-
+  - readline@8.0%gcc@8.3.0 arch=linux-ubuntu18.04-x86_64
+  - bzip2@1.0.8%gcc@8.3.0 arch=linux-ubuntu18.04-x86_64
   mirrors:
-    cloud_mirror: 's3://spack-private/mirror'
+    cloud_mirror: 's3://spack-public/mirror'
   gitlab-ci:
     mappings:
     - match: [os=ubuntu18.04]
@@ -13,6 +13,11 @@ spack:
           entrypoint: ['']
         tags: [spack-kube]
         variables: {}
+    final-stage-rebuild-index:
+      tags: [spack-kube]
+      image:
+        name: scottwittenburg/spack-tutorial-builder
+        entrypoint: ['']
   cdash:
     build-group: Spack Tutorial Pipeline (GitHub mirror)
     url: https://cdash.spack.io
