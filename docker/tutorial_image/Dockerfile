@@ -8,39 +8,39 @@ ARG AWS_SECRET_ACCESS_KEY="None"
 RUN apt update -y \
   && apt upgrade -y \
   && apt install -y \
-#  git \
-#  gcc \
-#  g++ \
-#  gfortran \
-#  patch \
-#  bzip2 \
-#  findutils \
-#  automake \
-#  autoconf \
-#  make \
-#  m4 \
-#  unzip \
+  git \
+  gcc \
+  g++ \
+  gfortran \
+  patch \
+  bzip2 \
+  findutils \
+  automake \
+  autoconf \
+  make \
+  m4 \
+  unzip \
   vim \
-#  file \
-#  wget \
+  file \
+  wget \
   curl \
-#  mercurial \
-#  cpio \
+  mercurial \
+  cpio \
   gpg \
-#  zlib1g-dev \
-#  libffi-dev \
-#  libssl-dev \
-#  libxml2-dev \
-#  rsync \
-#  locate \
-#  pciutils \
-#  iputils-ping \
-#  iproute2 \
-#  emacs \
-#  gcc-6 \
-#  clang-6.0 \
-#  ncurses-dev \
-#  sudo \
+  zlib1g-dev \
+  libffi-dev \
+  libssl-dev \
+  libxml2-dev \
+  rsync \
+  locate \
+  pciutils \
+  iputils-ping \
+  iproute2 \
+  emacs \
+  gcc-6 \
+  clang-6.0 \
+  ncurses-dev \
+  sudo \
   python3-pip \
   && python3 -m pip install --upgrade pip setuptools wheel \
   && python3 -m pip install --upgrade gnureadline \
